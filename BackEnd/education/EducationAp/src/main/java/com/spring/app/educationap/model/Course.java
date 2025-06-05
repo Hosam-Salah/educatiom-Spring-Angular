@@ -20,5 +20,6 @@ public class Course {
     @Column(name = "course_price")
     private String coursePrice;
 
+    @OneToMany(mappedBy = "course")
     private List<Master> masters;
 }

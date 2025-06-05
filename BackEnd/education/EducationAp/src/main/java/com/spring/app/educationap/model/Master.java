@@ -45,5 +45,7 @@ public class Master {
     @Column(name = "last_updated")
     private Data lastUpdated;
 
+    @ManyToOne
+    @JoinColumn(name = "course_id")
     private Course course;
 }
