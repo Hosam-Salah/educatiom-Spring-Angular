@@ -6,6 +6,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.xml.crypto.Data;
+import java.util.Date;
 
 @Entity
 @Table(name = "master")
@@ -35,15 +36,15 @@ public class Master {
     private String address;
 
     @Temporal(TemporalType.DATE)
-    private Data data;
+    private Date data;
 
     @CreationTimestamp
     @Column(name = "data_created")
-    private Data dateCreated;
+    private Date dateCreated;
 
     @UpdateTimestamp
     @Column(name = "last_updated")
-    private Data lastUpdated;
+    private Date lastUpdated;
 
     @ManyToOne
     @JoinColumn(name = "course_id")

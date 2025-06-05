@@ -17,7 +17,7 @@ public class Course {
     @Enumerated(EnumType.ORDINAL)
     private Content content;
 
-    @Column(name = "course_price")
+    @Column(name = "course_price" )
     private String coursePrice;
 
     @OneToMany(mappedBy = "course")
