@@ -10,12 +10,8 @@ import java.util.Date;
 
 @Entity
 @Table(name = "master")
-public class Master {
+public class Master extends  BaseEntity{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private long id;
 
     @Column(name = "first_name")
     private String firstName;

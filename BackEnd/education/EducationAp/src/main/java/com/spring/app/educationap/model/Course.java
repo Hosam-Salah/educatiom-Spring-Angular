@@ -7,12 +7,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "course")
-public class Course {
+public class Course extends BaseEntity{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private long id;
 
     @Enumerated(EnumType.ORDINAL)
     private Content content;
