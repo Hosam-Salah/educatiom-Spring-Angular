@@ -2,12 +2,16 @@ package com.spring.app.educationap.model;
 
 import com.spring.app.educationap.model.enums.Gender;
 import jakarta.persistence.*;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import javax.xml.crypto.Data;
 import java.util.Date;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "master")
 public class Master extends  BaseEntity{

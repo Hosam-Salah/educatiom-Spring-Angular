@@ -2,9 +2,14 @@ package com.spring.app.educationap.model;
 
 import com.spring.app.educationap.model.enums.Content;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.List;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "course")
 public class Course extends BaseEntity{
