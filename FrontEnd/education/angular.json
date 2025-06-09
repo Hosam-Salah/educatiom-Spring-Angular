@@ -32,6 +32,12 @@
               "src/assets/css/register.css",
               "src/assets/css/templatemo-diagoona.css",
               "src/assets/css/util.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/js/jquery-3.4.1.min.js",
+              "src/assets/js/main.js",
+              "src/assets/js/templatemo-script.js"
             ]
           },
           "configurations": {
